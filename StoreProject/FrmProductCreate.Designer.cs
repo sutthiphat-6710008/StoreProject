@@ -1,6 +1,6 @@
 ﻿namespace StoreProject
 {
-    partial class FrmProductCreate
+    partial class btProDelete
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductCreate));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btProDelete));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pcbProImage = new System.Windows.Forms.PictureBox();
+            this.btProImage = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbProName = new System.Windows.Forms.TextBox();
+            this.tbProPrice = new System.Windows.Forms.TextBox();
+            this.tbProUnit = new System.Windows.Forms.TextBox();
+            this.nudProQuan = new System.Windows.Forms.NumericUpDown();
+            this.rdoProStatusOn = new System.Windows.Forms.RadioButton();
+            this.rdoProStatusOff = new System.Windows.Forms.RadioButton();
+            this.btSave = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbProImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudProQuan)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,9 +56,10 @@
             this.label1.BackColor = System.Drawing.Color.Yellow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(40, 29);
+            this.label1.Location = new System.Drawing.Point(53, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(415, 75);
+            this.label1.Size = new System.Drawing.Size(553, 92);
             this.label1.TabIndex = 1;
             this.label1.Text = "เพิ่มสินค้า";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,27 +67,41 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(141, 137);
+            this.panel1.Controls.Add(this.pcbProImage);
+            this.panel1.Location = new System.Drawing.Point(188, 169);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 219);
+            this.panel1.Size = new System.Drawing.Size(226, 269);
             this.panel1.TabIndex = 2;
             // 
-            // button1
+            // pcbProImage
             // 
-            this.button1.Location = new System.Drawing.Point(333, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pcbProImage.Location = new System.Drawing.Point(19, 21);
+            this.pcbProImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbProImage.Name = "pcbProImage";
+            this.pcbProImage.Size = new System.Drawing.Size(183, 222);
+            this.pcbProImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbProImage.TabIndex = 0;
+            this.pcbProImage.TabStop = false;
+            // 
+            // btProImage
+            // 
+            this.btProImage.Location = new System.Drawing.Point(444, 391);
+            this.btProImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btProImage.Name = "btProImage";
+            this.btProImage.Size = new System.Drawing.Size(45, 46);
+            this.btProImage.TabIndex = 3;
+            this.btProImage.Text = "...";
+            this.btProImage.UseVisualStyleBackColor = true;
+            this.btProImage.Click += new System.EventHandler(this.btProImage_Click);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 401);
+            this.label2.Location = new System.Drawing.Point(72, 494);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(133, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "ชื่อสินค้า";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -94,9 +109,10 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(54, 439);
+            this.label3.Location = new System.Drawing.Point(72, 540);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.Size = new System.Drawing.Size(133, 28);
             this.label3.TabIndex = 5;
             this.label3.Text = "ราคาสินค้า";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -104,9 +120,10 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(54, 511);
+            this.label4.Location = new System.Drawing.Point(72, 629);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.Size = new System.Drawing.Size(133, 28);
             this.label4.TabIndex = 7;
             this.label4.Text = "หน่วยสินค้า";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -114,9 +131,10 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(54, 473);
+            this.label5.Location = new System.Drawing.Point(72, 582);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.Size = new System.Drawing.Size(133, 28);
             this.label5.TabIndex = 6;
             this.label5.Text = "จำนวนสินค้า";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -124,134 +142,139 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(54, 545);
+            this.label6.Location = new System.Drawing.Point(72, 671);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.Size = new System.Drawing.Size(133, 28);
             this.label6.TabIndex = 8;
             this.label6.Text = "สถานะสินค้า";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // tbProName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(171, 401);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
-            this.textBox1.TabIndex = 9;
+            this.tbProName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProName.Location = new System.Drawing.Point(228, 494);
+            this.tbProName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbProName.Name = "tbProName";
+            this.tbProName.Size = new System.Drawing.Size(269, 26);
+            this.tbProName.TabIndex = 9;
             // 
-            // textBox2
+            // tbProPrice
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(171, 442);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 22);
-            this.textBox2.TabIndex = 10;
+            this.tbProPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProPrice.Location = new System.Drawing.Point(228, 544);
+            this.tbProPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbProPrice.Name = "tbProPrice";
+            this.tbProPrice.Size = new System.Drawing.Size(269, 26);
+            this.tbProPrice.TabIndex = 10;
+            this.tbProPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbProPrice_KeyPress);
             // 
-            // textBox3
+            // tbProUnit
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(169, 511);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(203, 22);
-            this.textBox3.TabIndex = 11;
+            this.tbProUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProUnit.Location = new System.Drawing.Point(225, 629);
+            this.tbProUnit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbProUnit.Name = "tbProUnit";
+            this.tbProUnit.Size = new System.Drawing.Size(269, 26);
+            this.tbProUnit.TabIndex = 11;
             // 
-            // numericUpDown1
+            // nudProQuan
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(171, 474);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nudProQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudProQuan.Location = new System.Drawing.Point(228, 583);
+            this.nudProQuan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudProQuan.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(203, 22);
-            this.numericUpDown1.TabIndex = 14;
+            this.nudProQuan.Name = "nudProQuan";
+            this.nudProQuan.Size = new System.Drawing.Size(271, 26);
+            this.nudProQuan.TabIndex = 14;
             // 
-            // radioButton1
+            // rdoProStatusOn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(171, 550);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 17);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "พร้อมขาย";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdoProStatusOn.AutoSize = true;
+            this.rdoProStatusOn.Checked = true;
+            this.rdoProStatusOn.Location = new System.Drawing.Point(228, 677);
+            this.rdoProStatusOn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoProStatusOn.Name = "rdoProStatusOn";
+            this.rdoProStatusOn.Size = new System.Drawing.Size(73, 20);
+            this.rdoProStatusOn.TabIndex = 15;
+            this.rdoProStatusOn.TabStop = true;
+            this.rdoProStatusOn.Text = "พร้อมขาย";
+            this.rdoProStatusOn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdoProStatusOff
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(289, 551);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(83, 17);
-            this.radioButton2.TabIndex = 16;
-            this.radioButton2.Text = "ไม่พร้อมขาย";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdoProStatusOff.AutoSize = true;
+            this.rdoProStatusOff.Location = new System.Drawing.Point(385, 678);
+            this.rdoProStatusOff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdoProStatusOff.Name = "rdoProStatusOff";
+            this.rdoProStatusOff.Size = new System.Drawing.Size(85, 20);
+            this.rdoProStatusOff.TabIndex = 16;
+            this.rdoProStatusOff.Text = "ไม่พร้อมขาย";
+            this.rdoProStatusOff.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btSave
             // 
-            this.button3.Image = global::StoreProject.Properties.Resources.save;
-            this.button3.Location = new System.Drawing.Point(240, 596);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 43);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "บันทึกเพิ่มสินค้า";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btSave.Image = global::StoreProject.Properties.Resources.save;
+            this.btSave.Location = new System.Drawing.Point(320, 734);
+            this.btSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(179, 53);
+            this.btSave.TabIndex = 18;
+            this.btSave.Text = "บันทึกเพิ่มสินค้า";
+            this.btSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
-            // button2
+            // btCancel
             // 
-            this.button2.Image = global::StoreProject.Properties.Resources.cancel;
-            this.button2.Location = new System.Drawing.Point(86, 596);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 43);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "ยกเลิก";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btCancel.Image = global::StoreProject.Properties.Resources.cancel;
+            this.btCancel.Location = new System.Drawing.Point(115, 734);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(179, 53);
+            this.btCancel.TabIndex = 17;
+            this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // pictureBox1
+            // btProDelete
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(14, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 180);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // FrmProductCreate
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 681);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(668, 838);
+            this.Controls.Add(this.btSave);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.rdoProStatusOff);
+            this.Controls.Add(this.rdoProStatusOn);
+            this.Controls.Add(this.nudProQuan);
+            this.Controls.Add(this.tbProUnit);
+            this.Controls.Add(this.tbProPrice);
+            this.Controls.Add(this.tbProName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btProImage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.Name = "FrmProductCreate";
+            this.Name = "btProDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "เพิ่มสินค้า - บริหารจัดการข้อมูลสินค้า";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbProImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudProQuan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,21 +284,21 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pcbProImage;
+        private System.Windows.Forms.Button btProImage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox tbProName;
+        private System.Windows.Forms.TextBox tbProPrice;
+        private System.Windows.Forms.TextBox tbProUnit;
+        private System.Windows.Forms.NumericUpDown nudProQuan;
+        private System.Windows.Forms.RadioButton rdoProStatusOn;
+        private System.Windows.Forms.RadioButton rdoProStatusOff;
+        private System.Windows.Forms.Button btCancel;
+        private System.Windows.Forms.Button btSave;
     }
 }
 

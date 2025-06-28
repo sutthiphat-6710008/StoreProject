@@ -52,18 +52,19 @@
             // 
             this.lvAllProduct.HideSelection = false;
             this.lvAllProduct.Location = new System.Drawing.Point(61, 155);
-            this.lvAllProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvAllProduct.Margin = new System.Windows.Forms.Padding(4);
             this.lvAllProduct.Name = "lvAllProduct";
             this.lvAllProduct.Size = new System.Drawing.Size(1107, 278);
             this.lvAllProduct.TabIndex = 1;
             this.lvAllProduct.UseCompatibleStateImageBehavior = false;
+            this.lvAllProduct.ItemActivate += new System.EventHandler(this.lvAllProduct_ItemActivate);
             // 
             // btnProductCreaate
             // 
             this.btnProductCreaate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductCreaate.Image = global::StoreProject.Properties.Resources.basket;
             this.btnProductCreaate.Location = new System.Drawing.Point(952, 464);
-            this.btnProductCreaate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProductCreaate.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductCreaate.Name = "btnProductCreaate";
             this.btnProductCreaate.Size = new System.Drawing.Size(217, 63);
             this.btnProductCreaate.TabIndex = 2;
@@ -71,6 +72,7 @@
             this.btnProductCreaate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProductCreaate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductCreaate.UseVisualStyleBackColor = true;
+            this.btnProductCreaate.Click += new System.EventHandler(this.btnProductCreaate_Click);
             // 
             // label2
             // 
@@ -94,7 +96,7 @@
             this.Controls.Add(this.lvAllProduct);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "FrmProductShow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

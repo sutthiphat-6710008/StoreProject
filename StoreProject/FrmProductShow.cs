@@ -126,5 +126,21 @@ namespace StoreProject
         {
             getAllProductToLV();
         }
+
+        private void btnProductCreaate_Click(object sender, EventArgs e)
+        {
+            btProDelete frmProductCreate = new btProDelete();
+            frmProductCreate.ShowDialog();
+            getAllProductToLV();
+        }
+
+        private void lvAllProduct_ItemActivate(object sender, EventArgs e)
+        {
+            FrmProductUpDel frmProductUpDel = new FrmProductUpDel(
+               int.Parse( lvAllProduct.SelectedItems[0].SubItems[1].Text)
+                );
+            frmProductUpDel.ShowDialog();
+            getAllProductToLV();
+        }
     }
 }
